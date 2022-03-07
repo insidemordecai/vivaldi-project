@@ -34,7 +34,7 @@
               <h4>Create an Account</h4>
             </div>
 
-            <form action="" method="post">
+            <form action="handle_register.php" method="post">
               <div class="row mb-3">
                 <div class="col-lg-6">
                   <input class="form-control rounded-pill" type="text" name="firstname" placeholder="First Name" required>
@@ -45,15 +45,15 @@
               </div>
               <div class="row mb-3">
                 <div>
-                  <input class="form-control rounded-pill" type="email" name="email" placeholder="Email Address">
+                  <input class="form-control rounded-pill" type="email" name="email" placeholder="Email Address" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-lg-6">
-                  <input class="form-control rounded-pill" type="password" name="password" placeholder="Password">
+                  <input class="form-control rounded-pill" type="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="col-lg-6">
-                  <input class="form-control rounded-pill" type="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+                  <input class="form-control rounded-pill" type="password" name="confirmpass" placeholder="Confirm Password" required>
                 </div>
               </div>
               <div class="row mb-3">
