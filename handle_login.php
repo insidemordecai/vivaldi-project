@@ -2,7 +2,7 @@
 
 include "config.php";
 
-if (isset($_POST["login"])){
+if (isset($_POST["login"])) {
 
   $userEmail = $_POST["email"];
   $userPass = $_POST["password"];
@@ -11,11 +11,11 @@ if (isset($_POST["login"])){
 
   $result = mysqli_query($link, $sql);
 
-  if ($result){
+  if ($result) {
     $data = mysqli_num_rows($result);
 
-    if ($data == 1){
-      while($row = mysqli_fetch_array($result)){
+    if ($data == 1) {
+      while ($row = mysqli_fetch_array($result)) {
 
         $id = $row["id"];
         $email = $row["email"];
@@ -23,19 +23,30 @@ if (isset($_POST["login"])){
         $password = $row["password"];
 
         // verify and login
-        if (password_verify($userPass, $password)){
+        if (password_verify($userPass, $password)) {
 
-          session_start();
+          if ($row["usertype"] == "student") {
+            session_start();
 
-          $_SESSION["loggedin"] = true;
-          $_SESSION["id"] = $id;
-          $_SESSION["username"] = $firstname;
+            $_SESSION["loggedin"] = true;
+            $_SESSION["id"] = $id;
+            $_SESSION["username"] = $firstname;
 
-          header("location: dashboard.php");
+            header("location: dashboard.php");
+          } elseif ($row["usertype"] == "admin") {
+            session_start();
+
+            $_SESSION["loggedin"] = true;
+            $_SESSION["id"] = $id;
+            $_SESSION["username"] = $firstname;
+
+            header("location: admindashboard.php");
+          } else {
+            echo "You have not been assigned a usertype. Contact Admin.";
+          }
         } else {
           echo "Incorrect Password";
         }
-
       }
     } else {
       echo "No such user was found!";
