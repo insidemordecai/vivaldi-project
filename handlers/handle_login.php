@@ -1,6 +1,7 @@
 <?php
 
-include "config.php";
+include "C:/xampp/htdocs/vivaldi-project/config.php";
+// include "../config.php";
 
 if (isset($_POST["login"])) {
 
@@ -32,7 +33,7 @@ if (isset($_POST["login"])) {
             $_SESSION["id"] = $id;
             $_SESSION["username"] = $firstname;
 
-            header("location: dashboard.php");
+            header("location: ../dashboard.php");
           } elseif ($row["usertype"] == "admin") {
             session_start();
 
@@ -40,7 +41,7 @@ if (isset($_POST["login"])) {
             $_SESSION["id"] = $id;
             $_SESSION["username"] = $firstname;
 
-            header("location: admindashboard.php");
+            header("location: ../admindashboard.php");
           } else {
             echo "You have not been assigned a usertype. Contact Admin.";
           }

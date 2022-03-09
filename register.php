@@ -34,7 +34,7 @@
               <h4>Create an Account</h4>
             </div>
 
-            <form action="handle_register.php" method="post">
+            <form action="handlers/handle_register.php" method="post">
               <div class="row mb-3">
                 <div class="col-lg-6">
                   <input class="form-control rounded-pill" type="text" name="firstname" placeholder="First Name" required>

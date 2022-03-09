@@ -1,7 +1,7 @@
 <?php
 
-include "google-api/vendor/autoload.php";
-include "client_secret.php";
+include "./google-api/vendor/autoload.php";
+include "./client_secret.php";
 
 $gClient = new Google_Client();
 

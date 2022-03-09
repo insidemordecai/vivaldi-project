@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-include "handle_glogin.php";
-include "handle_login.php";
+include "handlers/handle_glogin.php";
+include "handlers/handle_login.php";
 include "header.php";
 
 if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {

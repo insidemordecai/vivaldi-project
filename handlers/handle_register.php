@@ -1,6 +1,7 @@
 <?php
 
-include "config.php";
+include "C:/xampp/htdocs/vivaldi-project/config.php";
+// include "../config.php";
 
 if (isset($_POST["register"])) {
 
@@ -29,7 +30,7 @@ if (isset($_POST["register"])) {
 
     if ($result) {
       echo "Successfully registered account";
-      header("location: index.php");
+      header("location: ../index.php");
     } else {
       echo "Error executing query $sql" . mysqli_error($link);
     }
