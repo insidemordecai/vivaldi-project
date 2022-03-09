@@ -49,7 +49,7 @@ include "handle_glogin.php";
               </div>
               <hr>
               <div class="row mb-3">
-                <button type="button" onclick="window.location='<?php echo $login_url;?>'" class="btn btn-danger rounded-pill"><i class="fa fa-google"></i> Login With Google</button>
+                <button type="button" onclick="window.location='<?php echo $login_url; ?>'" class="btn btn-danger rounded-pill"><i class="fa fa-google"></i> Login With Google</button>
               </div>
             </form>
             <hr>

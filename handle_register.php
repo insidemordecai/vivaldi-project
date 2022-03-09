@@ -10,19 +10,19 @@ if (isset($_POST["register"])) {
   $password = $_POST["password"];
   $confirmpass = $_POST["confirmpass"];
 
-  if (strlen($password) < 6){
+  if (strlen($password) < 6) {
     $passError = "Password be more than 6 characters";
     echo $passError;
   } else {
     $storePass = password_hash($password, PASSWORD_DEFAULT);
   }
 
-  if ($password != $confirmpass){
+  if ($password != $confirmpass) {
     $confirmpassError = "Passwords do not match";
     echo $confirmpassError;
   }
 
-  if (empty($passError) and empty($confirmpassError)){
+  if (empty($passError) and empty($confirmpassError)) {
     $sql = "INSERT INTO `users`(`firstname`, `secondname`, `email`, `password`) VALUES ('$firstname','$secondname','$email','$storePass')";
 
     $result = mysqli_query($link, $sql);

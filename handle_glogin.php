@@ -1,10 +1,7 @@
 <?php
 
 include "google-api/vendor/autoload.php";
-
-// create file and save clientId, clientSecret and redirectUri there
-// base info from client_secret.json project file Google Developer Console
-include "client_secret.php"; 
+include "client_secret.php";
 
 $gClient = new Google_Client();
 
@@ -56,5 +53,8 @@ if (isset($_GET["code"])) {
       $picture = $data["picture"];
       $_SESSION["picture"] = $picture;
     }
+
+    // save login state
+    $_SESSION["loggedin"] = true; 
   }
 }
