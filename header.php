@@ -140,12 +140,12 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">
-                        <span class="m-2"><?php echo $firstname; ?></span>
+                        <span class="m-2"><?php echo $_SESSION["firstname"]; ?></span>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#" id="LiveToastBtn">
-                        <img class="rounded-circle" src="<?php echo $picture; ?>" alt="Loading" width="32" height="32" />
+                        <img class="rounded-circle" src="<?php echo $_SESSION["picture"]; ?>" alt="Loading" width="32" height="32" />
                       </a>
 
                       <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
