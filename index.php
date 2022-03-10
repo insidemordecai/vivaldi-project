@@ -1,6 +1,6 @@
 <?php
 
-include "handlers/handle_glogin.php";
+include "handle_glogin.php";
 
 ?>
 
@@ -37,7 +37,7 @@ include "handlers/handle_glogin.php";
               <h4>Log In Here</h4>
             </div>
 
-            <form action="handlers/handle_login.php" method="post">
+            <form action="handle_login.php" method="post">
               <div class="row mb-3">
                 <input class="form-control rounded-pill" type="email" name="email" placeholder="Email Address">
               </div>
