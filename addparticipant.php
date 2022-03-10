@@ -13,7 +13,7 @@ include "header.php";
 <div class="row m-2">
   <div class="card">
     <div class="card-body">
-      <form action="" method="post" enctype="multipart/form-data">
+      <form action="handle_addstudent.php" method="post" enctype="multipart/form-data">
         <div class="row m-2 p-2">
           <div class="col-md-6">
             <label class="form-label grey">Full Name</label>
