@@ -56,7 +56,7 @@
           <hr />
 
           <li class="nav-item spacy">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="documents.php">
               <i class="fa fa-file text-white fa-lg"></i>
               <span class="text-white m-2">Documents</span>
             </a>
