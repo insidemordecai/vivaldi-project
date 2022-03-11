@@ -7,7 +7,7 @@ if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {
   exit();
 }
 
-include "header.php";
+include "./components/header.php";
 ?>
 
 <div class="row m-2">

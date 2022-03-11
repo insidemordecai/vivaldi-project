@@ -41,7 +41,7 @@
           <hr />
 
           <li class="nav-item spacy">
-            <a class="nav-link" href="addparticipant.php">
+            <a class="nav-link" href="./addparticipant.php">
               <i class="fa fa-users text-white fa-lg"></i>
               <span class="text-white m-2">Participants</span>
             </a>
@@ -56,7 +56,7 @@
           <hr />
 
           <li class="nav-item spacy">
-            <a class="nav-link" href="documents.php">
+            <a class="nav-link" href="./documents.php">
               <i class="fa fa-file text-white fa-lg"></i>
               <span class="text-white m-2">Documents</span>
             </a>
@@ -88,7 +88,7 @@
           </li>
           <hr />
           <li class="nav-item spacy">
-            <a class="nav-link" href="logout.php">
+            <a class="nav-link" href="./logout.php">
               <i class="fa fa-mail-forward text-white fa-lg"></i>
               <span class="text-white m-2">Log Out</span>
             </a>

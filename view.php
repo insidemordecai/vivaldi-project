@@ -3,7 +3,7 @@
 session_start();
 include "handle_glogin.php";
 include "handle_login.php";
-include "header.php";
+include "./components/header.php";
 include "config.php";
 
 if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {

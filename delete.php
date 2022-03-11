@@ -23,7 +23,7 @@ if (isset($_POST["submit"])){
   }
 }
 
-include "header.php";
+include "./components/header.php";
 ?>
 
 <div class="row m-2">
