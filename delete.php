@@ -3,19 +3,19 @@
 session_start();
 include "handle_glogin.php";
 include "handle_login.php";
-include "config.php";
+include "./components/config.php";
 
 if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {
   header("location: index.php");
   exit();
 }
 
-if (isset($_POST["submit"])){
+if (isset($_POST["submit"])) {
   $id = $_POST["id"];
   $sql = "DELETE FROM `participant` WHERE id = $id";
   $result = mysqli_query($link, $sql);
 
-  if ($result){
+  if ($result) {
     echo "Record was deleted.";
     header("location: documents.php");
   } else {

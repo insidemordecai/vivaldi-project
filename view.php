@@ -4,7 +4,7 @@ session_start();
 include "handle_glogin.php";
 include "handle_login.php";
 include "./components/header.php";
-include "config.php";
+include "./components/config.php";
 
 if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {
   header("location: index.php");

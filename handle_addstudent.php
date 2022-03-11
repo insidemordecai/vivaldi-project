@@ -2,7 +2,7 @@
 
 session_start();
 include "./components/header.php";
-include "config.php";
+include "./components/config.php";
 
 if (isset($_POST["submit"])) {
 
