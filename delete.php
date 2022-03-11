@@ -3,7 +3,6 @@
 session_start();
 include "handle_glogin.php";
 include "handle_login.php";
-include "header.php";
 include "config.php";
 
 if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {
@@ -24,6 +23,7 @@ if (isset($_POST["submit"])){
   }
 }
 
+include "header.php";
 ?>
 
 <div class="row m-2">
