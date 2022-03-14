@@ -48,7 +48,8 @@ if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {
             "<td>
             <a href='view.php?id=" . $row["id"] . "'><i class='fa fa-eye'></i></a>
             <a href='delete.php?id=" . $row["id"] . "'><i class='fa fa-trash'></i></a>
-          </td>";
+            <a href='update.php?id=" . $row["id"] . "'><i class='fa fa-pencil'></i></a>
+            </td>";
             echo "</tr>";
           }
 
