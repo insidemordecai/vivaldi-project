@@ -23,6 +23,7 @@ if (isset($_POST["submit"])) {
 
   $result = mysqli_query($link, $sql);
 
+  // moving photo to uploads
   if (move_uploaded_file($tempname, $folder)) {
     echo "<p class='alert alert-primary'> Image has been uploaded successfully </p>";
   } else {
