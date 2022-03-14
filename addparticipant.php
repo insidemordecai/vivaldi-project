@@ -44,18 +44,11 @@ include "./components/header.php";
           <div class="col-md-6">
             <label class="form-label grey">Gender</label>
             <select class="form-control" name="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
             </select>
           </div>
 
-          <div class="row p-2">
-            <div class="col-md-12">
-              <label class="form-label grey">Your Photo</label>
-              <input class=</div>
-            </div>
-          </div>
           <div class="row p-2">
             <div class="col-md-12">
               <label class="form-label grey">Your Photo</label>
