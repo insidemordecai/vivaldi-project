@@ -10,7 +10,7 @@ if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true) {
 include "./components/header.php";
 include "./components/config.php";
 
-if (isset($_POST["submit"]) and !empty($_GET["id"])) {
+if (isset($_POST["submit"])) {
   $id = $_POST["id"];
 
   $up_fullName = $_POST["fullName"];
