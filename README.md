@@ -14,5 +14,8 @@ For Log In with Google:
   - `$clientSecret = "YOUR SECRET";` 
   - `$redirectUri = "YOUR REDIRECT";`
 
+To reproduce this project, the project sql file `vivaldi.sql` is included in the root folder. Import into phpMyAdmin. The file db also includes a table `hospital` for [Hospital Admission project].
+
 [Google API Client Library for PHP]: https://github.com/googleapis/google-api-php-client
 [Google Developer Console]: https://console.cloud.google.com/apis/dashboard
+[Hospital Admission project]:https://github.com/insidemordecai/hospital-admission
